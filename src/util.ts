@@ -43,7 +43,7 @@ export const parseConfig = (env: Env): Config => {
   return {
     github_token: env.GITHUB_TOKEN || "",
     github_ref: env.GITHUB_REF || "",
-    github_repository: env.INPUT_REPOSITORY || env.GITHUB_REPOSITORY || "",
+    github_repository: "pkegg/351ELEC-beta",
     input_name: env.INPUT_NAME,
     input_tag_name: env.INPUT_TAG_NAME,
     input_body: env.INPUT_BODY,
