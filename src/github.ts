@@ -152,7 +152,9 @@ export const release = async (
     throw new Error("Too many retries.");
   }
 
-  const [owner, repo] = config.github_repository.split("/");
+  //const [owner, repo] = config.github_repository.split("/");
+  const owner = "pkegg";
+  const repo = "351ELEC-beta";
   const tag =
     config.input_tag_name || config.github_ref.replace("refs/tags/", "");
   try {
